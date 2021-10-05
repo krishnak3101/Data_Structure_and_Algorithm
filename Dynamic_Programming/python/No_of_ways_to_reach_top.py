@@ -5,7 +5,7 @@ Problem category:  Dynamic Programming
 
 def find_ways_brute_force(n):
     """
-    :param n: stair n
+    :param n: step n
     :return: no of ways to reach n
     """
 
@@ -28,7 +28,7 @@ def find_ways_brute_force(n):
 
 def find_ways_dp(n):
     """
-    :param n: stair n
+    :param n: step n
     :return: no of ways to reach n
     """
     if n == 1: # base case
@@ -37,7 +37,7 @@ def find_ways_dp(n):
     if n == 2: # we can reach from step 1 or directly jump to step 2
         return 2
     """
-    when we are at ith stair no of ways to reach it is simply the sum of no of ways to reach (i-1)stair and (i-2)stair 
+    when we are at 'i'th stair no of ways to reach it is simply the sum of no of ways to reach (i-1)stair and (i-2)stair 
     """
 
 
